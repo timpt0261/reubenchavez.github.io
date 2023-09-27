@@ -1,2 +1,2 @@
-# reubenchavez.github.io
-First Website portfolio containing projects form my programming journey in UCSC
+# Reuben Chavez Portfolio
+ Webpage containg the projects I have created on my Computer Science Journey
