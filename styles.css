@@ -5,49 +5,39 @@ body {
     font-family: 'Times New Roman', sans-serif;
 }
 
-/* Style the header and navigation */
-header {
-    background-color: #f5f5f5; /* Light gray */
-    color: #333; /* Dark gray */
-    text-align: center;
-    padding: 10px;
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #333; /* Dark gray */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-weight: bold; /* Make the font bold */
-}
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
 
-/* Style the sections */
-section {
-    padding: 40px;
-    text-align: center;
-    transition: background-color 0.5s ease; /* Add a smooth transition effect */
-}
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
 
-#about-me {
-    background-color: #fff1d0; /* Initial bone color */
-}
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
 
-#my-resume {
-    background-color: #f5f5f5; /* Light gray */
-}
-
-#portfolio {
-    background-color: #e0e0e0; /* Slightly darker gray */
-}
-
-aside{
-    padding-block-start: 50px;
-}
